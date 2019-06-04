@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Sacramento&display=swap');
+   body {
+    background: #eee;
+    color: #000;
+    font-family: HelveticaNeue, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  }
+  
+  /* window begin */
+  
+  a {
+    text-decoration: none;
+  }
+  
+  span {
+    margin-top:2px;
+    line-height: 9px;
+    vertical-align: 50%;
+  }
+  
+  .window {
+    background-color: rgb(71, 69, 69);
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+    padding:0px;
+    margin-top: 12.5vh;
+    border: 1px solid #ddd;
+    border-top:0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #acacac;
+  }
+  
+  .titlebar {
+    color: #4d494d;
+    background:black;
+    font-size: 11pt;
+    line-height: 20px;
+    text-align: center;
+    padding:10px;
+    height: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    user-select: none;
+    cursor: default;
+  }
+  .buttons {
+    padding-left: 8px;
+    padding-top: 3px;
+    float: left;
+    line-height: 0px;
+  }
+  
+  .buttons:hover a {
+    visibility: visible;
+    top: 2px;
+  }
+  
+  .close {
+    background: #ff5c5c;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e33e41;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .close:active {
+    background: #c14645;
+    border: 1px solid #b03537;
+  }
+  
+  .close:active .closebutton {
+    color: #4e0002;
+  }
+  
+  .closebutton {
+    color: #820005;
+    visibility: hidden;
+    cursor: default;
+  }
+  
+  .minimize {
+    background: #ffbd4c;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 4px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e09e3e;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .minimize:active {
+    background: #c08e38;
+    border: 1px solid #af7c33;
+  }
+  
+  .minimize:active .minimizebutton {
+    color: #5a2607;
+  }
+  
+  .minimizebutton {
+    color: #9a5518;
+    visibility: hidden;
+    cursor: default;
+  }
+  
+  .zoom {
+    background: #00ca56;
+    font-size: 9pt;
+    line-height: 11px;
+
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #14ae46;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .zoom:active {
+    background: #029740;
+    border: 1px solid #128435;
+  }
+  
+  .zoom:active .zoombutton {
+    color: #003107;
+  }
+  
+  .zoombutton {
+    color: #006519;
+    visibility: hidden;
+    cursor: default;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  
+  
+  /* content BEGIN */
+  
+  h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #ddd;
+    margin-top: 0px;
+  }
+  h2{
+    font-family: 'Gloria Hallelujah', cursive;  
+  }
+  
+  /* content*/
+  .content{
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-column-gap: 20px; 
+      grid-row-gap: 20px;
+    }
+
+  #head{
+    width: 120px;
+    position: relative;
+    top: 40px;
+    border-radius: 50%;
+    padding: .2em;
+    background: rgba(255, 255, 255, .4);
+    box-shadow: .5em .3em .5em rgba(0, 0, 0, .4);
+  }
+
+  .s1{
+    text-align: center;
+    }
+
+  
+
+  .s2{
+    margin: auto;
+    background-color: rgb(129, 120, 120);
+    border-radius: 5px;
+    padding: 10px;
+    border: rgb(160, 156, 156);
+    background: rgba(255, 255, 255, .4);
+    box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+    width:40vw;
+    text-align: center;
+    
+  }
+  .s2>span{
+    padding: 5px;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px; 
+    line-height: 15pt; 
+    font-weight: lighter;
+    }
+
+    .s3{
+      text-align: center;
+      margin: auto;
+      width: 24vw;
+    }
+    ul li{
+      text-align: center;
+      list-style: none;
+      float: left;
+      margin: 10px;
+      height: 50px;
+      width: 50px;
+      line-height: 63px;      
+      text-align: center;
+      background-color: #00ca56;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    ul li a{
+      transition: .9s;
+      
+    }
+    ul li a:hover{
+      color: #00ca56;
+    }
+   ul li:hover{
+     background-color: rgb(124, 28, 153);
+   }
+    
+   /* Portrait and Landscape */
+@media only screen 
+and (min-width: 360px) and (max-width: 650px) 
+and (max-height: 640px) {
+  .window {
+    background-color: rgb(71, 69, 69);
+    width: 90vw;
+    height: 150vh;
+    margin: auto;
+    padding:0px;
+    margin-top: 12.5vh;
+    border: 1px solid #ddd;
+    border-top:0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #acacac;
+  }
+  .s2{
+    margin: auto;
+    background-color: rgb(129, 120, 120);
+    border-radius: 5px;
+    padding: 10px;
+    border: rgb(160, 156, 156);
+    background: rgba(255, 255, 255, .4);
+    box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+    width:75vw;
+    text-align: center;
+    
+  }
+  .s3{
+    margin: auto;
+    width: 30vw;
+  }
+}
+
+@media only screen 
+and (min-width: 650px) and (max-width: 900px) 
+and (max-height: 700px){
+  .window {
+    background-color: rgb(71, 69, 69);
+    width: 60vw;
+    height: 125vh;
+    margin: auto;
+    padding:0px;
+    margin-top: 12.5vh;
+    border: 1px solid #ddd;
+    border-top:0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #acacac;
+  }
+}
+
+@media only screen 
+and (min-width: 901px) and (max-width: 1300px) 
+and (max-height: 700px){
+  .window {
+    background-color: rgb(71, 69, 69);
+    width: 70vw;
+    height: 110vh;
+    margin: auto;
+    padding:0px;
+    margin-top: 12.5vh;
+    border: 1px solid #ddd;
+    border-top:0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #acacac;
+  }
+  .s2{
+    margin: auto;
+    background-color: rgb(129, 120, 120);
+    border-radius: 5px;
+    padding: 10px;
+    border: rgb(160, 156, 156);
+    background: rgba(255, 255, 255, .4);
+    box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+    width:65vw;
+    text-align: center;
+  }
+  .s3{
+    margin: auto;
+    min-width: 30vw;
+  }
+}
